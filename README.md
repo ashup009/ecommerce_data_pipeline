@@ -1,5 +1,3 @@
-I'll read the repository files to provide a comprehensive project analysis including data modeling and architecture.Based on the repository structure and code analysis, here's a comprehensive overview of the **ecommerce_data_pipeline** project:
-
 ## 📊 **ecommerce_data_pipeline**
 
 **Overview:** A Databricks-based ETL (Extract, Transform, Load) pipeline for e-commerce data processing, building a dimensional data warehouse for profit analysis and business intelligence.
