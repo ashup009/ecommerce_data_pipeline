@@ -1,0 +1,57 @@
+{ 
+    "Products":
+    {        
+        "file_path": "/Volumes/az_ci_de_dbs/ecom_dev/ecom_src/Products.csv",
+        "file_format": "csv",
+        "target_table": "az_ci_de_dbs.ecom_dev.stg_products",
+        "params": {"header": "True"},
+        "schema": {
+            "Product ID": "product_id",
+            "Category": "category",
+            "Sub-Category": "sub_category",
+            "Product Name": "product_name",
+            "State": "state",
+            "Price per product": "price_per_product"
+        }
+    },
+    "Customers":
+    {
+        "file_path": "/Volumes/az_ci_de_dbs/ecom_dev/ecom_src/Customer.xlsx",
+        "file_format": "excel",
+        "target_table": "az_ci_de_dbs.ecom_dev.stg_customers",
+        "params": {"sheet_name": "Worksheet"},
+        "schema": {
+            "Customer ID": "customer_id",
+            "Customer Name": "customer_name",
+            "email": "email",
+            "phone": "phone",
+            "address": "address",
+            "Segment": "segment",
+            "Country": "country",
+            "City": "city",
+            "State": "state",
+            "Postal Code": "postal_code",
+            "Region": "region"
+        }
+    },
+    "Orders":
+    {
+        "file_path": "/Volumes/az_ci_de_dbs/ecom_dev/ecom_src/Orders.json",
+        "file_format": "json",
+        "target_table": "az_ci_de_dbs.ecom_dev.stg_orders",
+        "params": {"multi_line": "True"},
+        "schema": {
+            "Row ID": "row_id",
+            "Order ID": "order_id",
+            "Order Date": "order_date",
+            "Ship Date": "ship_date",
+            "Ship Mode": "ship_mode",
+            "Customer ID": "customer_id",
+            "Product ID": "product_id",
+            "Quantity": "quantity",
+            "Price": "price",
+            "Discount": "discount",
+            "Profit": "profit"
+        }
+    }
+}
