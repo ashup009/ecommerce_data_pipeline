@@ -150,11 +150,6 @@ The pipeline includes comprehensive validation:
 3. **Schema Validation** – Verifies column presence and data types
 4. **Row Count Validation** – Confirms minimum/maximum row thresholds
 
-**Example Check:**
-```python
-validate_not_null(product_df_cleaned, ['product_id'], label='dim_products')
-validate_row_count(product_df_cleaned, min_rows=1, label='dim_products')
-```
 
 ---
 
