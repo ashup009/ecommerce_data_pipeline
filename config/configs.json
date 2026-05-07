@@ -14,7 +14,6 @@
             "State": "state",
             "Price per product": "price_per_product"
         },
-        "struct_schema": "StructType([StructField('product_id', StringType(), False), StructField('product_name', StringType(), False), StructField('category', StringType(), False), StructField('sub_category', StringType(), False), StructField('state', StringType(), False), StructField('price_per_product', DoubleType(), False)])",
         "defaults": {
             "product_name": "unknown",
             "category": "unknown",
@@ -43,7 +42,7 @@
             "Postal Code": "postal_code",
             "Region": "region"
         },
-        "struct_schema": "StructType([StructField('customer_id', StringType(), False), StructField('customer_name', StringType(), False), StructField('email', StringType(), False), StructField('phone', StringType(), False), StructField('address', StringType(), False), StructField('segment', StringType(), False), StructField('country', StringType(), False), StructField('city', StringType(), False), StructField('state', StringType(), False), StructField('postal_code', StringType(), False), StructField('region', StringType(), False)])",
+        
         "defaults": {
             "customer_name": "unknown",
             "email": "unknown",
@@ -77,7 +76,6 @@
             "Discount": "discount",
             "Profit": "profit"
         },
-        "struct_schema": "StructType([StructField('row_id', IntegerType(), False),StructField('order_id', StringType(), False), StructField('order_date', DateType(), False), StructField('ship_date', DateType(), False), StructField('ship_mode', StringType(), False), StructField('customer_id', StringType(), False), StructField('product_id', StringType(), False), StructField('quantity', IntegerType(), False), StructField('price', DoubleType(), False), StructField('discount', DoubleType(), False), StructField('profit', DecimalType(10, 2), False)])",
         "defaults": {
             "ship_mode": "unknown",
             "order_date": "01-01-9999",
